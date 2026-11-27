@@ -50,7 +50,7 @@ Inventory::Inventory(string id, string name, string cat, int qty, double price, 
     isModified = false;
 }
 
-Inventory::Inventory(const Inventory& other)
+Inventory::Inventory(const Inventory &other)
 {
     itemID = other.itemID;
     itemName = other.itemName;
@@ -76,7 +76,7 @@ Inventory::Inventory(const Inventory& other)
     }
 }
 
-Inventory& Inventory::operator=(const Inventory& other)
+Inventory &Inventory::operator=(const Inventory &other)
 {
     if (this == &other)
         return *this;
@@ -267,6 +267,7 @@ bool Inventory::addInventory(const Inventory &newItem)
     }
     if (binarySearchByID(newItem.getItemID()) != -1)
     {
+        printTableHeader();
         cout << "[Error] Item ID '" << newItem.getItemID() << "' already exists!\n";
         return false;
     }
@@ -311,12 +312,22 @@ bool Inventory::updateInventory(string id)
         cout << "Enter your choice: ";
         cin >> choice;
 
+        if (cin.fail())
+        {
+            cin.clear();
+            cin.ignore(10000, '\n');
+            cout << "[Error] Invalid option. Please enter a number.\n";
+            choice = -1;
+            continue;
+        }
+
         switch (choice)
         {
         case 1:
             cout << "\nEnter New Item Name (or '0' to keep [" << items[index].getItemName() << "]): ";
             getline(cin >> ws, newName);
-            if (newName != "0" && newName != items[index].getItemName()) {
+            if (newName != "0" && newName != items[index].getItemName())
+            {
                 items[index].setItemName(newName);
                 edited = true;
             }
@@ -325,37 +336,77 @@ bool Inventory::updateInventory(string id)
         case 2:
             cout << "Enter New Category (or '0' to keep [" << items[index].getCategory() << "]): ";
             getline(cin >> ws, newCat);
-            if (newCat != "0" && newCat != items[index].getCategory()) {
+            if (newCat != "0" && newCat != items[index].getCategory())
+            {
                 items[index].setCategory(newCat);
                 edited = true;
             }
             break;
 
         case 3:
-            cout << "Enter New Quantity (current: " << items[index].getQuantity() << "): ";
-            cin >> newQty;
-            if (newQty >= 0 && newQty != items[index].getQuantity()) {
-                items[index].setQuantity(newQty);
-                edited = true;
-            }
+            do
+            {
+                cout << "Enter New Quantity (current: " << items[index].getQuantity() << "): ";
+                cin >> newQty;
+                if (cin.fail())
+                {
+                    cin.clear();
+                    cin.ignore(10000, '\n');
+                    cout << "[Error] Invalid option. Please enter a number.\n";
+                    continue;
+                }
+
+                if (newQty >= 0 && newQty != items[index].getQuantity())
+                {
+                    items[index].setQuantity(newQty);
+                    edited = true;
+                    break;
+                }
+            } while (true);
             break;
 
         case 4:
-            cout << "Enter New Unit Price RM (current: " << items[index].getUnitPrice() << "): ";
-            cin >> newPrice;
-            if (newPrice >= 0 && newPrice != items[index].getUnitPrice()) {
-                items[index].setUnitPrice(newPrice);
-                edited = true;
-            }
+            do
+            {
+                cout << "Enter New Unit Price RM (current: " << items[index].getUnitPrice() << "): ";
+                cin >> newPrice;
+                if (cin.fail())
+                {
+                    cin.clear();
+                    cin.ignore(10000, '\n');
+                    cout << "[Error] Invalid option. Please enter a number.\n";
+                    continue;
+                }
+                if (newPrice >= 0 && newPrice != items[index].getUnitPrice())
+                {
+                    items[index].setUnitPrice(newPrice);
+                    edited = true;
+                    break;
+                }
+            } while (true);
+
             break;
 
         case 5:
-            cout << "Enter New Reorder Level (current: " << items[index].getReorderLevel() << "): ";
-            cin >> newReorder;
-            if (newReorder >= 0 && newReorder != items[index].getReorderLevel()) {
-                items[index].setReorderLevel(newReorder);
-                edited = true;
-            }
+            do
+            {
+                cout << "Enter New Reorder Level (current: " << items[index].getReorderLevel() << "): ";
+                cin >> newReorder;
+                if (cin.fail())
+                {
+                    cin.clear();
+                    cin.ignore(10000, '\n');
+                    cout << "[Error] Invalid option. Please enter a number.\n";
+                    continue;
+                }
+                if (newReorder >= 0 && newReorder != items[index].getReorderLevel())
+                {
+                    items[index].setReorderLevel(newReorder);
+                    edited = true;
+                    break;
+                }
+            } while (true);
+
             break;
 
         case 0:

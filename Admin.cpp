@@ -26,25 +26,62 @@ void Admin::addNewItem(Inventory &sys)
     int qty, reorder;
     double price;
 
-    cout << "\n--- Add New Inventory Item ---\n";
-    cout << "Enter Item ID (e.g., I011): ";
-    cin >> id;
-    cout << "Enter Item Name: ";
-    getline(cin >> ws, name);
-    cout << "Enter Category: ";
-    getline(cin >> ws, cat);
-    cout << "Enter Initial Quantity: ";
-    cin >> qty;
-    cout << "Enter Unit Price (RM): ";
-    cin >> price;
-    cout << "Enter Reorder Level: ";
-    cin >> reorder;
-
-    if (qty < 0 || price < 0 || reorder < 0)
+    do
     {
-        cout << "[Error] Quantity, price, and reorder level cannot be negative.\n";
-        return;
-    }
+        cout << "\n--- Add New Inventory Item ---\n";
+        cout << "Enter Item ID (e.g., I011): ";
+        cin >> id;
+        cout << "Enter Item Name: ";
+        getline(cin >> ws, name);
+        cout << "Enter Category: ";
+        getline(cin >> ws, cat);
+        do
+        {
+            cout << "Enter Initial Quantity: ";
+            cin >> qty;
+            if (cin.fail())
+            {
+                cin.clear();
+                cin.ignore(10000, '\n');
+                cout << "[Error] Quantity only can be integer.\n";
+                continue;
+            }
+            do
+            {
+                cout << "Enter Unit Price (RM): ";
+                cin >> price;
+                if (cin.fail())
+                {
+                    cin.clear();
+                    cin.ignore(10000, '\n');
+                    cout << "[Error] Price only can be integer.\n";
+                    continue;
+                }
+                do
+                {
+                    cout << "Enter Reorder Level: ";
+                    cin >> reorder;
+                    if (cin.fail())
+                    {
+                        cin.clear();
+                        cin.ignore(10000, '\n');
+                        cout << "[Error] Reorder only can be integer.\n";
+                        continue;
+                    }
+                    break;
+                } while (true);
+                break;
+            } while (true);
+            break;
+        } while (true);
+
+        if (qty < 0 || price < 0 || reorder < 0)
+        {
+            cout << "[Error] Quantity, price, and reorder level cannot be negative.\n";
+            return;
+        }
+        break;
+    } while (true);
 
     Inventory newItem(id, name, cat, qty, price, reorder);
     if (sys.addInventory(newItem))
@@ -73,22 +110,45 @@ void Admin::manageStockMovement(Inventory &sys)
 {
     string id;
     int type, amount;
-    cout << "\n--- Stock-In / Stock-Out Management ---\n";
-    cout << "Enter Item ID: ";
-    cin >> id;
-    cout << "1. Stock-In (Restock)\n"
-         << "2. Stock-Out (Issue/Sale)\n"
-         << "Select type (1 / 2): ";
-    cin >> type;
-    cout << "Enter Quantity Amount: ";
-    cin >> amount;
+    do
+    {
+        cout << "\n--- Stock-In / Stock-Out Management ---\n";
+        cout << "Enter Item ID: ";
+        cin >> id;
+        cout << "1. Stock-In (Restock)\n"
+             << "2. Stock-Out (Issue/Sale)\n"
+             << "0. Back\n"
+             << "Select type (0 - 2): ";
+        cin >> type;
+        if (cin.fail())
+        {
+            cin.clear();
+            cin.ignore(10000, '\n');
+            cout << "[Error] Invalid option. Please enter a number.\n";
+            continue;
+        }
+        cout << "Enter Quantity Amount: ";
+        cin >> amount;
 
-    if (type == 1)
-        sys.stockInOut(id, amount, true);
-    else if (type == 2)
-        sys.stockInOut(id, amount, false);
-    else
-        cout << "[Error] Invalid transaction type.\n";
+        if (cin.fail())
+        {
+            cin.clear();
+            cin.ignore(10000, '\n');
+            cout << "[Error] Invalid option. Please enter a number.\n";
+            continue;
+        }
+
+        if (type == 1){
+            sys.stockInOut(id, amount, true);
+            break;
+        }
+        else if (type == 2){
+            sys.stockInOut(id, amount, false);
+            break;
+        }
+        else
+            cout << "[Error] Invalid transaction type.\n";
+    } while (true);
 }
 
 void Admin::viewAllStaff(const Staff staffs[], int staffCount) const
@@ -183,6 +243,15 @@ void Admin::editStaff(Staff staffs[], int staffCount)
              << "Enter choice: ";
         cin >> choice;
 
+        if (cin.fail())
+        {
+            cin.clear();
+            cin.ignore(10000, '\n');
+            cout << "[Error] Invalid option. Please enter a number.\n";
+            choice = -1;
+            continue;
+        }
+
         if (choice == 1)
         {
             string newName;
@@ -198,12 +267,13 @@ void Admin::editStaff(Staff staffs[], int staffCount)
             getline(cin >> ws, newDept);
             staffs[index].setDepartment(newDept);
             cout << "[Success] Staff department updated.\n";
+            break;
         }
         else if (choice != 0)
         {
             cout << "[Error] Invalid option.\n";
         }
-    } while (choice != 0);
+    } while (true);
 }
 
 void Admin::removeStaff(Staff staffs[], int &staffCount)
@@ -259,6 +329,15 @@ void Admin::manageStaffMenu(Staff staffs[], int &staffCount)
              << "Enter choice: ";
         cin >> choice;
 
+        if (cin.fail())
+        {
+            cin.clear();
+            cin.ignore(10000, '\n');
+            cout << "[Error] Invalid option. Try again.\n";
+            choice = -1;
+            continue;
+        }
+
         switch (choice)
         {
         case 1:
@@ -278,7 +357,8 @@ void Admin::manageStaffMenu(Staff staffs[], int &staffCount)
         default:
             cout << "[Error] Invalid option. Try again.\n";
         }
-    } while (choice != 0);
+        break;
+    } while (true);
 }
 
 void Admin::displayMenu(Inventory &sys)
@@ -310,7 +390,8 @@ void Admin::displayMenu(Inventory &sys, Staff staffs[], int &staffCount)
              << "Enter choice: ";
         cin >> choice;
 
-        if (cin.fail()) {
+        if (cin.fail())
+        {
             cin.clear();
             cin.ignore(10000, '\n');
             cout << "[Error] Invalid option. Please enter a number.\n";
@@ -353,5 +434,6 @@ void Admin::displayMenu(Inventory &sys, Staff staffs[], int &staffCount)
         default:
             cout << "[Error] Invalid option. Try again.\n";
         }
-    } while (choice != 0);
+        break;
+    } while (true);
 }
