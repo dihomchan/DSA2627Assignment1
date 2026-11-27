@@ -127,6 +127,8 @@ void Admin::manageStockMovement(Inventory &sys)
             cout << "[Error] Invalid option. Please enter a number.\n";
             continue;
         }
+        if (type == 0) break;
+        
         cout << "Enter Quantity Amount: ";
         cin >> amount;
 
@@ -146,9 +148,7 @@ void Admin::manageStockMovement(Inventory &sys)
             sys.stockInOut(id, amount, false);
             break;
         }
-        else
-            cout << "[Error] Invalid transaction type.\n";
-    } while (true);
+    } while (type != 0);
 }
 
 void Admin::viewAllStaff(const Staff staffs[], int staffCount) const
@@ -273,7 +273,7 @@ void Admin::editStaff(Staff staffs[], int staffCount)
         {
             cout << "[Error] Invalid option.\n";
         }
-    } while (true);
+    } while (choice != 0);
 }
 
 void Admin::removeStaff(Staff staffs[], int &staffCount)
@@ -357,8 +357,7 @@ void Admin::manageStaffMenu(Staff staffs[], int &staffCount)
         default:
             cout << "[Error] Invalid option. Try again.\n";
         }
-        break;
-    } while (true);
+    } while (choice != 0);
 }
 
 void Admin::displayMenu(Inventory &sys)
@@ -434,6 +433,5 @@ void Admin::displayMenu(Inventory &sys, Staff staffs[], int &staffCount)
         default:
             cout << "[Error] Invalid option. Try again.\n";
         }
-        break;
-    } while (true);
+    } while (choice != 0);
 }

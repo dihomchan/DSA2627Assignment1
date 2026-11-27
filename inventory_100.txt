@@ -1,100 +1,100 @@
-I001 Network Switch 8-Port v2 Networking 20 515.15 25
-I002 Desk Lamp LED v3 Furniture 107 448.74 5
-I003 Webcam 1080p v4 Electronic 7 562.80 10
-I004 Filing Cabinet v5 Furniture 65 636.75 15
-I005 Heavy Duty Stapler v6 Stationery 65 799.39 15
-I006 Crimping Tool v7 Networking 41 880.18 10
-I007 Graphics Tablet v8 Electronic 19 929.29 25
-I008 Filing Cabinet v9 Furniture 71 325.36 25
-I009 A4 Paper Ream v10 Stationery 144 243.87 5
-I010 Heavy Duty Stapler v11 Stationery 109 246.76 5
-I011 Wrist Rest Pad v12 Accessory 143 673.18 25
-I012 Storage Ottoman v13 Furniture 110 916.48 25
-I013 Fiber Patch Cord v14 Networking 73 638.67 10
-I014 A4 Paper Ream v15 Stationery 101 258.92 20
-I015 Bookshelf 4-Tier v16 Furniture 60 219.16 10
-I016 PoE Injector v17 Networking 51 404.93 20
-I017 A4 Paper Ream v18 Stationery 135 880.00 25
-I018 Wi-Fi 6 Router v19 Electronic 22 403.78 25
-I019 Patch Panel 24-Port v20 Networking 121 425.00 10
-I020 Mouse Pad XL v1 Accessory 50 513.88 10
-I021 Network Switch 8-Port v2 Networking 146 745.57 15
-I022 Bluetooth Speaker v3 Electronic 146 633.05 5
-I023 Fiber Patch Cord v4 Networking 3 76.27 5
-I024 Arch Lever File v5 Stationery 73 822.42 15
-I025 PoE Injector v6 Networking 71 274.49 10
-I026 Storage Ottoman v7 Furniture 104 648.59 25
-I027 Standing Desk v8 Furniture 150 33.65 15
-I028 Mechanical Keyboard v9 Electronic 110 215.32 25
-I029 Laptop Stand v10 Accessory 108 392.85 25
-I030 LAN Cable Tester v11 Networking 63 267.76 5
-I031 A4 Paper Ream v12 Stationery 30 883.32 15
-I032 A4 Paper Ream v13 Stationery 101 325.63 20
-I033 Sticky Notes Pack v14 Stationery 70 159.23 5
-I034 Gaming Headset v15 Electronic 75 207.18 25
-I035 Wi-Fi 6 Router v16 Electronic 57 446.86 15
-I036 Patch Panel 24-Port v17 Networking 33 686.43 15
-I037 Whiteboard Marker Set v18 Stationery 147 241.07 25
-I038 Arch Lever File v19 Stationery 82 419.93 25
-I039 Mechanical Keyboard v20 Electronic 110 789.50 5
-I040 PoE Injector v1 Networking 148 551.43 10
-I041 Scientific Calculator v2 Stationery 116 853.32 20
-I042 27-inch Monitor v3 Electronic 40 227.00 10
-I043 USB-C Hub v4 Accessory 132 84.84 10
-I044 Desk Lamp LED v5 Furniture 144 631.99 20
-I045 Arch Lever File v6 Stationery 20 18.26 25
-I046 Crimping Tool v7 Networking 103 894.95 10
-I047 Sticky Notes Pack v8 Stationery 104 858.25 10
-I048 Wi-Fi 6 Router v9 Electronic 64 105.34 15
-I049 Highlighters 6-Pack v10 Stationery 3 896.15 15
-I050 Wi-Fi 6 Router v11 Electronic 19 644.54 10
-I051 USB Ethernet Adapter v12 Networking 87 97.33 10
-I052 Patch Panel 24-Port v13 Networking 115 585.70 25
-I053 Laptop Sleeve 15in v14 Accessory 104 945.44 15
-I054 Standing Desk v15 Furniture 36 258.23 5
-I055 Webcam 1080p v16 Electronic 35 608.71 15
-I056 Ergonomic Chair v17 Furniture 31 834.35 15
-I057 Scientific Calculator v18 Stationery 117 123.30 10
-I058 Monitor Arm v19 Furniture 91 837.95 10
-I059 LAN Cable Tester v20 Networking 45 629.15 15
-I060 Document Tray v1 Stationery 139 712.54 25
-I061 Bluetooth Speaker v2 Electronic 149 188.27 5
-I062 USB-C Hub v3 Accessory 63 835.27 5
-I063 A4 Paper Ream v4 Stationery 122 218.70 20
-I064 Filing Cabinet v5 Furniture 52 148.09 5
-I065 Laptop Stand v6 Accessory 10 817.99 5
-I066 Wireless Mouse v7 Electronic 105 694.38 5
-I067 Mechanical Keyboard v8 Electronic 62 165.92 20
-I068 Bookshelf 4-Tier v9 Furniture 42 421.61 25
-I069 Wrist Rest Pad v10 Accessory 34 931.87 25
-I070 Mechanical Keyboard v11 Electronic 21 898.32 10
-I071 Wrist Rest Pad v12 Accessory 20 437.82 25
-I072 Document Tray v13 Stationery 17 204.03 20
-I073 Screen Cleaning Kit v14 Accessory 112 75.31 15
-I074 Document Tray v15 Stationery 50 98.21 20
-I075 Cable Organizer v16 Accessory 128 385.37 10
-I076 Filing Cabinet v17 Furniture 69 484.84 15
-I077 Mobile Pedestal v18 Furniture 137 16.86 25
-I078 Arch Lever File v19 Stationery 56 437.14 15
-I079 Mesh Wi-Fi Node v20 Networking 17 712.97 5
-I080 Mesh Wi-Fi Node v1 Networking 82 888.59 10
-I081 Keycap Puller v2 Accessory 147 292.54 25
-I082 Gel Pen Box v3 Stationery 120 180.42 15
-I083 A4 Paper Ream v4 Stationery 140 58.49 15
-I084 HDMI 2.1 Cable v5 Accessory 123 900.01 10
-I085 Wi-Fi 6 Router v6 Electronic 124 482.43 25
-I086 Monitor Arm v7 Furniture 31 741.01 10
-I087 Keycap Puller v8 Accessory 69 45.48 25
-I088 Laptop Stand v9 Accessory 12 718.86 10
-I089 Gel Pen Box v10 Stationery 120 637.36 25
-I090 USB-C Hub v11 Accessory 41 233.85 20
-I091 Cat6 Ethernet Cable v12 Networking 96 557.35 10
-I092 Scientific Calculator v13 Stationery 27 57.08 25
-I093 Filing Cabinet v14 Furniture 69 381.74 15
-I094 Gel Pen Box v15 Stationery 12 299.42 5
-I095 Paper Shredder v16 Stationery 7 815.26 25
-I096 HDMI 2.1 Cable v17 Accessory 107 32.81 15
-I097 Gel Pen Box v18 Stationery 73 444.60 5
-I098 Mouse Pad XL v19 Accessory 77 214.25 5
-I099 RJ45 Connectors 100pk v20 Networking 106 316.28 15
-I100 Fiber Patch Cord v1 Networking 126 215.87 20
+I064 Table v6 Furniture 21 549.27 25
+I019 PoE v7 Networking 98 154.57 10
+I089 Table v3 Furniture 20 657.14 10
+I004 Kit v20 Accessory 123 481.04 5
+I047 HDMI v2 Accessory 18 682.94 20
+I093 Switch v10 Networking 83 236.85 5
+I031 Webcam v4 Electronic 59 36.01 5
+I076 Calc v3 Stationery 107 732.90 25
+I012 Shelf v14 Furniture 102 130.78 5
+I055 Marker v18 Stationery 112 576.11 10
+I028 Calc v7 Stationery 39 791.10 5
+I099 Notes v20 Stationery 57 558.14 5
+I041 Panel v2 Networking 19 906.18 25
+I007 Calc v3 Stationery 135 583.02 15
+I082 Desk v14 Furniture 66 194.12 25
+I036 Sleeve v19 Accessory 33 54.41 20
+I069 Stand v7 Accessory 36 811.58 20
+I015 Panel v5 Networking 6 350.52 10
+I050 Stapler v2 Stationery 11 717.97 10
+I095 Lamp v15 Furniture 109 243.00 10
+I023 Kit v20 Accessory 148 935.37 20
+I071 Desk v18 Furniture 142 519.41 15
+I002 Router v5 Electronic 131 371.11 25
+I058 Pad v1 Accessory 91 430.03 15
+I085 Panel v6 Networking 146 48.24 5
+I039 HDMI v16 Accessory 76 413.20 25
+I010 Crimp v4 Networking 74 246.50 25
+I091 PoE v11 Networking 82 819.73 15
+I044 Desk v2 Furniture 90 236.28 5
+I061 Monitor 13 Electronic 114 42.23 5
+I025 Puller v17 Accessory 37 830.56 5
+I078 Calc v20 Stationery 90 130.20 25
+I009 Cable v12 Networking 87 71.49 5
+I053 Tray v12 Stationery 88 925.29 20
+I097 Calc v13 Stationery 121 478.58 15
+I034 Headset 11 Electronic 57 794.78 25
+I067 Switch v8 Networking 69 738.35 20
+I017 Stand v5 Accessory 77 803.68 5
+I080 Charger v4 Electronic 41 295.53 10
+I048 Headset 19 Electronic 53 50.70 10
+I005 Marker v10 Stationery 89 933.43 5
+I073 HDMI v19 Accessory 62 752.85 5
+I021 Pad v8 Accessory 74 717.12 20
+I087 Crimp v8 Networking 9 477.90 25
+I042 Node v9 Networking 143 28.62 20
+I060 Speaker 18 Electronic 95 492.06 10
+I014 Mount v18 Accessory 25 617.09 20
+I096 Pedestal 7 Furniture 82 188.04 10
+I030 Speaker v1 Electronic 130 361.21 20
+I075 Puller v15 Accessory 24 71.34 20
+I001 Mouse v5 Electronic 96 791.71 5
+I056 RJ45 v16 Networking 84 105.99 15
+I084 PoE v3 Networking 150 154.52 25
+I037 Tester v14 Networking 18 113.76 20
+I062 Kit v16 Accessory 94 369.57 25
+I020 PoE v1 Networking 114 50.59 15
+I092 Lamp v3 Furniture 35 724.91 25
+I046 Arm v16 Furniture 120 931.96 20
+I011 Kit v17 Accessory 22 557.57 10
+I079 PoE v10 Networking 35 416.38 5
+I026 File v12 Stationery 143 888.20 25
+I068 Puller v19 Accessory 75 662.19 20
+I003 Cable v18 Networking 117 864.46 25
+I051 Cushion v8 Furniture 14 823.78 15
+I098 Paper v14 Stationery 25 898.49 25
+I033 Pad v7 Accessory 116 588.24 5
+I088 Shelf v10 Furniture 125 239.81 20
+I040 Cabinet v5 Furniture 148 401.28 5
+I018 Node v20 Networking 136 45.00 15
+I072 HDMI v13 Accessory 94 487.98 5
+I029 Pad v3 Accessory 91 884.61 20
+I065 Lamp v18 Furniture 82 620.41 10
+I008 Shelf v12 Furniture 101 393.95 15
+I054 File v1 Stationery 134 260.35 5
+I090 Tray v6 Stationery 125 446.31 15
+I038 Node v2 Networking 6 603.85 25
+I081 Cabinet 20 Furniture 90 900.61 25
+I049 Webcam v1 Electronic 81 494.22 25
+I013 Ottoman v5 Furniture 98 614.71 15
+I074 Ottoman 12 Furniture 148 356.46 25
+I024 Lamp v9 Furniture 130 505.58 10
+I066 Mouse v11 Electronic 49 478.85 20
+I006 PoE v13 Networking 12 242.50 20
+I057 Shelf v20 Furniture 116 576.27 20
+I100 Headset 18 Electronic 128 571.47 20
+I032 Arm v20 Furniture 37 45.52 20
+I086 Mouse v15 Electronic 149 258.41 10
+I043 Speaker 14 Electronic 97 248.06 5
+I016 Kit v16 Accessory 126 190.08 10
+I070 Pad v3 Accessory 24 771.79 15
+I027 Headset v6 Electronic 23 727.21 15
+I063 Router v7 Electronic 41 648.16 15
+I022 Mount v18 Accessory 63 300.55 20
+I059 Crimp v20 Networking 72 610.92 5
+I094 Table v6 Furniture 65 142.00 5
+I035 Node v7 Networking 110 114.07 15
+I083 Arm v7 Furniture 79 587.37 5
+I045 Panel v15 Networking 36 51.20 25
+I052 Desk v9 Furniture 96 420.45 20
+I077 Monitor 17 Electronic 83 613.62 20

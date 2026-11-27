@@ -288,6 +288,7 @@ bool Inventory::updateInventory(string id)
     }
 
     cout << "\nCurrent Item Details:\n";
+    printTableHeader();
     items[index].displayItem();
 
     string newName, newCat;
