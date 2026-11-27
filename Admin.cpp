@@ -1,4 +1,5 @@
 #include "Admin.h"
+#include "Inventory.h"
 #include <iostream>
 #include <iomanip>
 
@@ -115,6 +116,13 @@ void Admin::manageStockMovement(Inventory &sys)
         cout << "\n--- Stock-In / Stock-Out Management ---\n";
         cout << "Enter Item ID: ";
         cin >> id;
+        int index = sys.binarySearchByID(id);
+        if (index == -1)
+        {
+            cout << "[Error] Item ID '" << id << "' not found.\n";
+            return;
+        }
+        
         cout << "1. Stock-In (Restock)\n"
              << "2. Stock-Out (Issue/Sale)\n"
              << "0. Back\n"
@@ -127,8 +135,9 @@ void Admin::manageStockMovement(Inventory &sys)
             cout << "[Error] Invalid option. Please enter a number.\n";
             continue;
         }
-        if (type == 0) break;
-        
+        if (type == 0)
+            break;
+
         cout << "Enter Quantity Amount: ";
         cin >> amount;
 
@@ -140,11 +149,13 @@ void Admin::manageStockMovement(Inventory &sys)
             continue;
         }
 
-        if (type == 1){
+        if (type == 1)
+        {
             sys.stockInOut(id, amount, true);
             break;
         }
-        else if (type == 2){
+        else if (type == 2)
+        {
             sys.stockInOut(id, amount, false);
             break;
         }
